@@ -46,7 +46,7 @@ body {
           background-size: 100vw 130vh;
           background-color: black;
           height: 235vh;
-          font-family: "Special Elite", system-ui;
+          font-family: "Merriweather", system-ui;
           font-weight: 400;
           font-style: normal;
         }
@@ -86,7 +86,7 @@ body {
 
         #header p{
         font-size: 1.5vh;
-        font-family: "Cutive", serif;
+        font-family: "Merriweather", serif;
         font-weight: 400
         font-style: normal;
         text-align: justify;
