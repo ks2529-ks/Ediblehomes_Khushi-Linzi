@@ -46,6 +46,56 @@ function setLayerOpacity(layer) {
         console.error('Layer not found:', layer.layer);
     }
 }
+//This part adds the footer 
+story.appendChild(features);
+
+// --- ADD LAKES TABLE HERE ---
+if (config.showTable && config.lakes && config.lakes.length > 0) {
+    const storyEl = document.getElementById('story');
+
+    // Create wrapper
+    const tableWrapper = document.createElement('div');
+    tableWrapper.id = 'lakes-table-wrapper';
+
+    // Create table
+    const table = document.createElement('table');
+    table.classList.add('interactive-table');
+
+    // Table header
+    const headerRow = document.createElement('tr');
+    ['Number', 'Name', 'Index', 'Elevation', 'Area', 'Quality', 'Region', 'County'].forEach(h => {
+        const th = document.createElement('th');
+        th.textContent = h;
+        headerRow.appendChild(th);
+    });
+    table.appendChild(headerRow);
+
+    // Table rows
+    config.lakes.forEach(lake => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${lake.number}</td>
+            <td><a href="${lake.url}" target="_blank">${lake.name}</a></td>
+            <td>${lake.index}</td>
+            <td>${lake.elevation}</td>
+            <td>${lake.area}</td>
+            <td>${lake.quality}</td>
+            <td>${lake.region}</td>
+            <td>${lake.county}</td>
+        `;
+        row.addEventListener('mouseenter', () => {
+            row.style.backgroundColor = '#222'; // highlight on hover
+        });
+        row.addEventListener('mouseleave', () => {
+            row.style.backgroundColor = '';
+        });
+        table.appendChild(row);
+    });
+
+    tableWrapper.appendChild(table);
+    storyEl.appendChild(tableWrapper);
+
+}
 
 // Create pop Up
 var popup = new mapboxgl.Popup({
@@ -166,40 +216,7 @@ config.chapters.forEach((record, idx) => {
         chapter.appendChild(story2);
     }
 
-    if (config.showTable && config.lakes && config.lakes.length > 0) {
-    const tableWrapper = document.createElement('div');
-    tableWrapper.id = 'lakes-table-wrapper';
-
-    const table = document.createElement('table');
-    table.classList.add('interactive-table');
-
-    const headerRow = document.createElement('tr');
-    ['Number', 'Name', 'Index', 'Elevation', 'Area', 'Quality', 'Region', 'County'].forEach(h => {
-        const th = document.createElement('th');
-        th.textContent = h;
-        headerRow.appendChild(th);
-    });
-    table.appendChild(headerRow);
-
-    config.lakes.forEach(lake => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-            <td>${lake.number}</td>
-            <td><a href="${lake.url}" target="_blank">${lake.name}</a></td>
-            <td>${lake.index}</td>
-            <td>${lake.elevation}</td>
-            <td>${lake.area}</td>
-            <td>${lake.quality}</td>
-            <td>${lake.region}</td>
-            <td>${lake.county}</td>
-        `;
-        row.addEventListener('mouseenter', () => { row.style.backgroundColor = '#222'; });
-        row.addEventListener('mouseleave', () => { row.style.backgroundColor = ''; });
-        table.appendChild(row);
-    });
-
-    tableWrapper.appendChild(table);
-    chapter.appendChild(tableWrapper); // important! append to chapter
+    
 }
 
     if (record.video) {
