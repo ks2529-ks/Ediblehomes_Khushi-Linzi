@@ -11,7 +11,7 @@ var config = {
     subtitle: 'framworker housing',
     //byline: 'Marcos Escamilla-Guerrero',
     
-   showTable: true,
+   //showTable: true,
 
     lakes: [
       {
