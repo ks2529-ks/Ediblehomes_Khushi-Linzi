@@ -70,9 +70,9 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'List of Biomaterials',
-            image: 'images/Migrant_Caravan.jpg', 
+            image: 'images/Timber.jpg', 
             description:"The Western Hemisphere faces a severe migratory crisis as economic instability, violence, political controversies, and climate change drive millions to flee their homelands. Migrants journey through dangerous routes, often encountering exploitation, cartel violence, and harsh immigration policies. This crisis highlights deep systemic inequities and the urgent need for comprehensive regional solutions. Furthermore, one of the rising problems is the mortality rates in the migration corridors, the heatmap on the right represents the location of dead or missing migrants in the Western Hemisphere. <br> <br>", 
-            image2:  'images/mmp_graph.png',
+            image2:  'images/bio_based_cement.jpg',
             description2:"The above image shows the behavior of migrant deads in the western hemispher in previous years. It is evident that the overall behavior depicts a rise in the mortality of the migration corridors. The corresponding full report elaborated by IOM (International Organization for Migration) can be found<a href ='https://missingmigrants.iom.int/2022-americas-overview-missing-migrants-data'> here.</a>", 
             imagecredit: 'Photo credits: <a href="https://www.wjtv.com/news/international/ap-migrant-caravan-regroups-in-mexico-after-government-promises-of-papers-falls-through/">AP Photo/Edgar H. Clemente</a>',
             imagecredit2: 'Photo credits: <a href="https://www.iom.int/news/us-mexico-border-worlds-deadliest-migration-land-route">UN Migration</a>',
@@ -82,7 +82,7 @@ var config = {
                 pitch: 0.00,
                 bearing: 0.00
             },
-            mapAnimation: 'flyTo',
+            mapAnimation: 'easeTo',
             rotateAnimation: false,
             callback:() => {
                 popup.remove();
@@ -147,7 +147,7 @@ var config = {
                 pitch: 0.00,
                 bearing: 0.00
             },
-            mapAnimation: 'flyTo',
+            mapAnimation: 'easeTo',
             rotateAnimation: false,
             callback: () => {
                 popup.remove();
@@ -209,7 +209,7 @@ var config = {
                 pitch: 0.00,
                 bearing: 0.00
             },
-            mapAnimation: 'flyTo',
+            mapAnimation: 'easeTo',
             rotateAnimation: false,
             callback: () => {
                 popup.remove();
