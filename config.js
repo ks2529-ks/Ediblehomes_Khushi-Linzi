@@ -9,11 +9,57 @@ var config = {
     use3dTerrain: true, //set true for enabling 3D maps.
     title: 'Bacteria to Biomaterial',
     subtitle: 'framworker housing',
-    byline: 'Marcos Escamilla-Guerrero',
+    //byline: 'Marcos Escamilla-Guerrero',
     
-    para1:'The ongoing international migration through Mexico has escalated into a humanitarian crisis marked by a complex interplay of human rights violations, geopolitical challenges, environmental factors, and rising crime rates. According to the International Organization for Migration (IOM), only in 2022, 686 deaths and migrant disappearances were documented on the US-Mexico border. However, if the whole Mexican territory is evaluated, the numbers rise. Sadly, non-governmental organizations have led the majority of efforts to address this crisis by managing shelters and healthcare checkpoints spread across the country. On the other hand, the Mexican government\'s actions have proven to be insufficient in mitigating the worsening conditions. To this date, Mexico’s position towards the future seems uncertain. The recent presidential transition in Mexico and the upcoming elections in the United States (2024) have increased the speculation and stress over this topic. Furthermore, the policies implemented under former President Andrés Manuel López Obrador, particularly his "Abrazos no Balazos" (Hugs no Shots) strategy, have not only failed to alleviate the general violence in the Mexican territory but have, in many cases, exacerbated the insecurity faced by migrants.',
-    para2:'One of the most significant obstacles in addressing the migration crisis, as highlighted by the United Nations, is the constant lack of accurate information and the spread of misinformation. However, the project managed by the same institution, “Missing Migrants Project,” now has over a decade of data regarding the disappearances and deaths of migrants. Using the United Nation\'s resources, among others, this project seeks to shed light on the true implications and meaning of crossing Mexico as a migrant, with a particular focus on insecurity factors. A legitimate concern is that, with the end of López Obrador\'s term and the rise in cartel violence, Mexico is on track to become even more dangerous, with over 200,000 murders and 150,000 disappearances during the past six-year presidential term (sexenio). The previous numbers represent the most violent presidential period ever. Furthermore, drug cartels have expanded their influence, making migrants a key target for extortion, forced recruitment, and violence. According to a report by the Mexican government, between 2019 (the beginning of López Obrador\'s term) and 2022, more than 2,000 crimes were committed against migrants.',
-    para3:'This website focuses on the relationship between migration, criminal rates, and cartel violence. By mapping out the hardships migrants face, including the number of territories, climates, and cartel-controlled zones they must navigate, the project illustrates how deeply intertwined these issues are. The site visually depicts correlations between migrant deaths, migration routes, crime hotspots, and the distribution of shelters and support infrastructure across Mexico.',
+   showTable: true,
+
+    lakes: [
+      {
+        number: 153,
+        name: "Somerset Lake",
+        index: "D-66-P268",
+        elevation: 470,
+        area: 20.7,
+        quality: "B",
+        region: 4,
+        county: "Delaware",
+        url: "https://example.com/somerset-lake"
+      },
+      {
+        number: 206,
+        name: "Yankee Lake",
+        index: "D-1-12-8-P21",
+        elevation: 438,
+        area: 165.8,
+        quality: "B",
+        region: 3,
+        county: "Sullivan",
+        url: "https://example.com/yankee-lake"
+      },
+      {
+        number: 64,
+        name: "Chase Lake",
+        index: "Ont 19-57-4-P597",
+        elevation: 379,
+        area: 54.4,
+        quality: "A",
+        region: 6,
+        county: "Lewis",
+        url: "https://example.com/chase-lake"
+      },
+      {
+        number: 154,
+        name: "Spring Lake",
+        index: "H-204-2-36-4-P81",
+        elevation: 539,
+        area: 10.4,
+        quality: "B",
+        region: 4,
+        county: "Rensselaer",
+        url: "https://example.com/spring-lake"
+      }
+      // ... add more rows here
+    ],
 
 
     footer: '<br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
