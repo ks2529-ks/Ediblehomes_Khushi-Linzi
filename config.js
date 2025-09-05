@@ -7,7 +7,7 @@ var config = {
     inset: false,
     theme: 'dark',
     use3dTerrain: true, //set true for enabling 3D maps.
-    title: 'The Price of Passage',
+    title: 'Bacteria to Biomaterial',
     subtitle: 'A Decade of Migration Through Mexico in the Shadow of Insecurity and Cartel Power',
     byline: 'Marcos Escamilla-Guerrero',
     
