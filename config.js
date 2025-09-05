@@ -23,7 +23,7 @@ var config = {
             id: 'globe-heatmap',
             alignment: 'left',
             hidden: false,
-            title: 'Western Hemisphere Migration',
+            title: 'List of Biomaterials',
             image: 'images/Migrant_Caravan.jpg', 
             description:"The Western Hemisphere faces a severe migratory crisis as economic instability, violence, political controversies, and climate change drive millions to flee their homelands. Migrants journey through dangerous routes, often encountering exploitation, cartel violence, and harsh immigration policies. This crisis highlights deep systemic inequities and the urgent need for comprehensive regional solutions. Furthermore, one of the rising problems is the mortality rates in the migration corridors, the heatmap on the right represents the location of dead or missing migrants in the Western Hemisphere. <br> <br>", 
             image2:  'images/mmp_graph.png',
@@ -31,8 +31,8 @@ var config = {
             imagecredit: 'Photo credits: <a href="https://www.wjtv.com/news/international/ap-migrant-caravan-regroups-in-mexico-after-government-promises-of-papers-falls-through/">AP Photo/Edgar H. Clemente</a>',
             imagecredit2: 'Photo credits: <a href="https://www.iom.int/news/us-mexico-border-worlds-deadliest-migration-land-route">UN Migration</a>',
             location: {
-                center: [-110.13462, 22.60563],
-                zoom: 2,
+                center: [-98.5795, 39.8283],
+                zoom: 3.5,
                 pitch: 0.00,
                 bearing: 0.00
             },
@@ -86,9 +86,9 @@ var config = {
         },
         {
             id: 'Main_Routes',
-            alignment: 'left',
+            alignment: 'right',
             hidden: false,
-            title: 'Migration Routes',
+            title: 'New York Farms',
             image: 'images/Migrant_Train.webp',
             description: "Taking a closer look at the Mexican territory, there is something particular to the location of the migration routes inside Mexico and their relationship with existing infrastructure. Mexico’s migration corridors align closely with cargo train tracks, including routes through Chiapas, Veracruz, and Tamaulipas. These tracks are used by migrants to traverse the country, often riding La Bestia, a dangerous and mortal freight train. The corridors facilitate movement towards the North but expose migrants to extortion, accidents, and cartel violence along the way.",
             image2: 'images/Migration_Truck.webp',
@@ -96,8 +96,8 @@ var config = {
             imagecredit: 'Photo credits: <a href="https://www.nytimes.com/2023/05/10/world/americas/migrants-beast-train-mexico.html">Alejandro Cegarra</a>',
             imagecredit2: 'Photo credits: <a href="https://www.nytimes.com/2018/10/22/world/americas/immigrant-caravan-mexico-usa.html">Pedro Pardo/Agence France-Presse</a>',
             location: {
-                center: [-109.41145, 22.31081],
-                zoom: 4.8,
+                center: [-73.889, 42.770],
+                zoom: 6.25,
                 pitch: 0.00,
                 bearing: 0.00
             },
@@ -153,13 +153,13 @@ var config = {
             id: 'Routes_Crossed_Cities',
             alignment: 'right',
             hidden: false,
-            title: 'Crossed Cities',
+            title: 'Orange County',
             image: 'images/Migration_Routes_D_W.png',
             description: "The image above represents a diagram of the flows and partial destinations in the migration corridors. Based on a study done in 2020 by BBVA, the migration corridors were successfully replicated by using Google API tools. At the same time, the superposition of the railroad network, retrieved from INEGI, demonstrates the close relationships between migration and trains. Furthermore, it is graphically visible how the migration routes can be classified into three mayor areas: Pacific (left), Center (middle) and Gulf (right). According to the retrieved information, the longest journey can be composed of over 4,000 kilometers, from Tapachula, Chiapas to Tijuana, Baja California. The BBVA report can be found  <a href = 'https://www.bbvaresearch.com/en/publicaciones/map-2020-of-migrant-houses-shelters-and-soup-kitchens-for-migrants-in-mexico/'>here.</a>.",
             imagecredit: 'Photo credits: Self Produced Diagram based on BBVA 2020</a>',
             location: {
-                center: [-91.70083, 22.31081],
-                zoom: 4.8,
+                center: [-73.827, 41.346],
+                zoom: 7.80,
                 pitch: 0.00,
                 bearing: 0.00
             },
