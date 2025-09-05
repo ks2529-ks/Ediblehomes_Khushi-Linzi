@@ -1,6 +1,6 @@
 var config = {
-    style: 'mapbox://styles/kskhushi1901/cmf69pl7x002r01s7frlf5cu8',
-    accessToken: 'pk.eyJ1Ijoia3NraHVzaGkxOTAxIiwiYSI6ImNtZjY1aDBvejBjMGQya29ndHJmN3B0MTgifQ.d7Vr8R_YjPCw6DRnPxjQNQ',
+    style: 'mapbox://styles/mescamilla-arch/cm3ouwe3t00q601r2dty54ym7',
+    accessToken: 'pk.eyJ1IjoibWVzY2FtaWxsYS1hcmNoIiwiYSI6ImNtMXRpMXpoNTAybzAyanB4OTFuZnJ1c24ifQ.5yAwDGHE56G-z1ZzjxhWCw',
     showMarkers: false,
     markerColor: '#000000',
     projection: 'globe',
